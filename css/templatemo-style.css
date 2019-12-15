@@ -37,6 +37,11 @@ p:last-child { margin-bottom: 0; }
 
 .tm-img { padding: 15px; }
 
+#logo{
+	 width:100%;
+	 min-width:300px;
+}
+
 .tm-footer-text {
 	font-size: 0.9em;
 	margin-bottom: 0;
@@ -195,6 +200,14 @@ p:last-child { margin-bottom: 0; }
 	margin-bottom: 30px;
 }
 
+.logo-left{
+	padding-top: 20px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
 /* Fix for Safari 9.0.3 on Mac */
 .tm-white-curve-right {	margin-right: -1px; }
 
@@ -392,6 +405,14 @@ p:last-child { margin-bottom: 0; }
 }
 
 @media screen and (max-width: 1060px) {
+	.logo-left{
+		margin-top: 130px;
+		margin-bottom: 30px;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+	}
+
 	.tm-section {
 		display: block;
 		height: auto;
@@ -535,6 +556,12 @@ p:last-child { margin-bottom: 0; }
   100%  { background-color: white; }
 }
 
+@media screen and (max-width: 550px) {
+	.container-type p{
+		font-size: 1.25rem;
+		padding: 0.15rem;
+	}
+}
 /* Cards */
 
 #sec {
@@ -658,4 +685,107 @@ p:last-child { margin-bottom: 0; }
 	.rpad{
 		padding-right: 60px;
 	}
+}
+
+/* Profile cards */
+.our-team {
+  padding: 30px 0 40px;
+  margin-bottom: 30px;
+  background-color: #f7f5ec;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.our-team .picture {
+  display: inline-block;
+  height: 130px;
+  width: 130px;
+  margin-bottom: 50px;
+  z-index: 1;
+  position: relative;
+}
+
+.our-team .picture::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background-color: #1369ce;
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
+}
+
+.our-team:hover .picture::before {
+  height: 100%;
+}
+
+.our-team .picture::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #1369ce;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.our-team .picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+}
+
+.our-team:hover .picture img {
+  box-shadow: 0 0 0 14px #f7f5ec;
+  transform: scale(0.7);
+}
+
+.our-team .title {
+  display: block;
+  font-size: 15px;
+  color: #4e5052;
+  text-transform: capitalize;
+}
+
+.our-team .social {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #1369ce;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .social {
+  bottom: 0;
+}
+
+.our-team .social li {
+  display: inline-block;
+}
+
+.our-team .social li a {
+  display: block;
+  padding: 10px;
+  font-size: 17px;
+  color: white;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.our-team .social li a:hover {
+  color: #1369ce;
+  background-color: #f7f5ec;
 }
