@@ -153,12 +153,12 @@ p:last-child { margin-bottom: 0; }
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	height: 600px;
+	height: 650px;
 }
 
 
 #tm-section-1 {	background: #3DC1B2; font-size: 40px}
-#tm-section-2 {	background: #BF3000;}
+#tm-section-2 {	background: #159BE9;}
 /* #tm-section-3 {	background: #4527A0; } */
 #tm-section-3 {	background:#16363C;}
 /* #tm-section-4	{background: #090C13} */
@@ -217,7 +217,7 @@ p:last-child { margin-bottom: 0; }
 
 .tm-white-curve-left-rec,
 .tm-white-curve-right-rec {
-	width: 401px;
+	width: 65%;
 }
 
 .tm-white-curve-left-circle {
@@ -533,4 +533,129 @@ p:last-child { margin-bottom: 0; }
   50% { background-color: transparent; }
   99% { background-color: transparent; }
   100%  { background-color: white; }
+}
+
+/* Cards */
+
+#sec {
+	 font-family: 'Raleway', sans-serif;
+	 padding: 50px 0;
+	 background: #fff;
+	 text-align: center;
+	 word-wrap: break-word;
+}
+ #sec h2 {
+	 font-weight: 200;
+	 font-size: 30px;
+	 color: #63b7e6;
+}
+ #sec ul {
+	 margin: 0;
+	 display: flex;
+	 flex-flow: row wrap;
+	 justify-content: center;
+	 list-style: none;
+}
+ #sec ul li {
+	 padding: 15px;
+	 width: 250px;
+	 /* transition: box-shadow 0.3s; */
+}
+ /* #sec ul li:hover {
+	 box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+ #sec ul li:hover span {
+	 color: #63b7e6;
+}
+ #sec ul li:hover p {
+	 color: #555;
+}
+ #sec ul li:hover h3 {
+	 color: #63b7e6;
+}
+ #sec ul li:hover h3:after {
+	 width: 25px;
+}
+ #sec ul li span {
+	 font-size: 2.6em;
+	 display: block;
+	 transition: color 0.3s;
+	 color: #a2a2a2;
+}
+ #sec ul li span:before, #sec ul li span:after {
+	 position: static;
+}
+ #sec ul li h3 {
+	 color: #6f6f6f;
+	 display: inline-block;
+	 font-size: 24px;
+	 font-weight: 100;
+	 transition: color 0.3s;
+}
+ #sec ul li h3:after {
+	 content: '';
+	 position: relative;
+	 left: 50%;
+	 top: 20px;
+	 transform: translateX(-50%);
+	 display: block;
+	 width: 40px;
+	 height: 1px;
+	 background: #6f6f6f;
+	 transition: width 0.3s;
+}
+ #sec ul li p {
+	 color: #a2a2a2;
+	 text-align: left;
+	 text-indent: 1em;
+	 font-size: 16px;
+	 line-height: 26px;
+	 transition: color 0.3s;
+} */
+
+/*  What we offer - hr icons */
+.hr{
+	 flex-direction:column;
+	 align-items: center;
+	 justify-content: center;
+}
+
+.hr .row{
+	height:120px;
+	width:300px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.hr h5{
+	font-weight: bold;
+}
+@media screen and (min-width: 775px) and (max-width:1060px) {
+	.hr{
+		 flex-direction:row;
+		 margin-top: 50px;
+		 margin-bottom: 50px;
+	}
+	.hr .l{
+		margin-right: 25px;
+	}
+	.hr .r{
+		margin-left: 25px;
+	}
+}
+@media screen and (min-width: 1060px){
+	.hr h5{
+		font-size: 28px;
+	}
+	.hr .l{
+		margin-top: 35px;
+		margin-bottom: 35px;
+	}
+	.hr .r{
+		margin-top: 35px;
+		margin-bottom: 35px;
+	}
+	.rpad{
+		padding-right: 60px;
+	}
 }
