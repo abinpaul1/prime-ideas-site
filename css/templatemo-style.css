@@ -1,10 +1,44 @@
-/*
-
-Strip
-
-http://www.templatemo.com/tm-482-strip
-
-*/
+/* Loading */
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #242f3f;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #Fff;
+  animation: loader 2s infinite ease;
+}
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+@keyframes loader {
+  0% { transform: rotate(0deg);}
+  25% { transform: rotate(180deg);}
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(360deg);}
+  100% { transform: rotate(360deg);}
+}
+@keyframes loader-inner {
+  0% { height: 0%;}
+  25% { height: 0%;}
+  50% { height: 100%;}
+  75% { height: 100%;}
+  100% { height: 0%;}
+}
 
 a { transition: all 0.3s ease; }
 
@@ -169,12 +203,12 @@ p:last-child { margin-bottom: 0; }
 /* #tm-section-4	{background: #090C13} */
 #tm-section-4	{background: #333333}
 #tm-section-5 {
-	background: -moz-linear-gradient(89deg, rgba(75,19,97,1) 0%, rgba(66,32,100,1) 12%, rgba(0,128,128,1) 100%); /* ff3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,128,128,1)), color-stop(88%, rgba(66,32,100,1)), color-stop(100%, rgba(75,19,97,1))); /* safari4+,chrome */
-	background: -webkit-linear-gradient(89deg, rgba(75,19,97,1) 0%, rgba(66,32,100,1) 12%, rgba(0,128,128,1) 100%); /* safari5.1+,chrome10+ */
-	background: -o-linear-gradient(89deg, rgba(75,19,97,1) 0%, rgba(66,32,100,1) 12%, rgba(0,128,128,1) 100%); /* opera 11.10+ */
-	background: -ms-linear-gradient(89deg, rgba(75,19,97,1) 0%, rgba(66,32,100,1) 12%, rgba(0,128,128,1) 100%); /* ie10+ */
-	background: linear-gradient(1deg, rgba(75,19,97,1) 0%, rgba(66,32,100,1) 12%, rgba(0,128,128,1) 100%); /* w3c */
+	background: -moz-linear-gradient(90deg, rgba(75,19,97,1) 0%, rgba(0,128,128,1) 100%); /* ff3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,128,128,1)), color-stop(100%, rgba(75,19,97,1))); /* safari4+,chrome */
+	background: -webkit-linear-gradient(90deg, rgba(75,19,97,1) 0%, rgba(0,128,128,1) 100%); /* safari5.1+,chrome10+ */
+	background: -o-linear-gradient(90deg, rgba(75,19,97,1) 0%, rgba(0,128,128,1) 100%); /* opera 11.10+ */
+	background: -ms-linear-gradient(90deg, rgba(75,19,97,1) 0%, rgba(0,128,128,1) 100%); /* ie10+ */
+	background: linear-gradient(0deg, rgba(75,19,97,1) 0%, rgba(0,128,128,1) 100%); /* w3c */
 }
 
 .tm-footer {
@@ -687,7 +721,106 @@ p:last-child { margin-bottom: 0; }
 	}
 }
 
-/* Profile cards */
+/* Team new */
+#team{
+	background: -moz-linear-gradient(270deg, rgba(153,218,255,1) 0%, rgba(0,128,128,1) 100%); /* ff3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(153,218,255,1)), color-stop(100%, rgba(0,128,128,1))); /* safari4+,chrome */
+	background: -webkit-linear-gradient(270deg, rgba(153,218,255,1) 0%, rgba(0,128,128,1) 100%); /* safari5.1+,chrome10+ */
+	background: -o-linear-gradient(270deg, rgba(153,218,255,1) 0%, rgba(0,128,128,1) 100%); /* opera 11.10+ */
+	background: -ms-linear-gradient(270deg, rgba(153,218,255,1) 0%, rgba(0,128,128,1) 100%); /* ie10+ */
+	background: linear-gradient(180deg, rgba(153,218,255,1) 0%, rgba(0,128,128,1) 100%); /* w3c */
+}
+
+.team{
+	justify-content: center;
+	align-items: center;
+}
+.testimonial {
+  background-color: white;
+  text-align: center;
+  padding: 30px 30px 50px;
+  margin: 100px 15px 160px;
+  position: relative;
+	border-radius: 100px;
+	max-width: 1000px;
+}
+
+@media screen and (max-width: 500px){
+	.testimonial {
+		border-radius: 0px;
+	}
+
+	.testimonial::before,
+	.testimonial::after {
+	  content: "";
+	  border-top: 40px solid white;
+	  border-right: 125px solid transparent;
+	  position: absolute;
+	  bottom: -40px;
+	  left: 0;
+	}
+
+	.testimonial::after {
+	  border-right: none;
+	  border-left: 125px solid transparent;
+	  left: auto;
+	  right: 0;
+	}
+}
+
+.testimonial .icon {
+  display: inline-block;
+  font-size: 80px;
+  color: #016d9b;
+  margin-bottom: 20px;
+  opacity: 0.6;
+}
+
+.testimonial .description {
+  font-size: 14px;
+  color: #777;
+  text-align: justify;
+  margin-bottom: 7.5px;
+  opacity: 0.9;
+}
+
+.testimonial .testimonial-content {
+  width: 100%;
+  left: 0;
+  position: absolute;
+}
+
+.testimonial .pic {
+  display: inline-block;
+  border: 4px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 4px #016d9b;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+}
+
+.testimonial .pic img {
+  width: 100%;
+  height: auto;
+}
+
+.testimonial .name {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  text-transform: capitalize;
+  margin: 10px 0 5px 0;
+}
+
+.testimonial .title {
+  display: block;
+  font-size: 20px;
+  color: #ffd9b8;
+}
+
+/* Old Team - Profile cards */
+/*
 .our-team {
   padding: 30px 0 40px;
   margin-bottom: 30px;
@@ -786,6 +919,6 @@ p:last-child { margin-bottom: 0; }
 }
 
 .our-team .social li a:hover {
-  color: #1369ce;
-  background-color: #f7f5ec;
-}
+  color: white;
+  background-color: white;
+} */
