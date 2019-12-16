@@ -414,6 +414,7 @@
 
           // For loading screen
           $(window).on("load",function(){
+              while(document.readyState !== "complete");
                $(".loader-wrapper").fadeOut("slow");
           });
 
