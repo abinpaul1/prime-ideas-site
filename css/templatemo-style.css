@@ -802,8 +802,9 @@ p:last-child { margin-bottom: 0; }
 }
 
 .testimonial .pic img {
-  width: 100%;
-  height: auto;
+	width:150px;
+  height:150px;
+  object-fit:cover;
 }
 
 .testimonial .name {
