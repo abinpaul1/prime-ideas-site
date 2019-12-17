@@ -402,9 +402,18 @@ p:last-child { margin-bottom: 0; }
 	font-weight: 400;
 }
 
-.contact-info-link { color: black; }
+.contact-info-link {
+	color: black;
+}
 
-.contact-info { margin-right: 20px; }
+.contact-info { margin-right: 20px; font-size: 20px;}
+
+@media screen and (max-width: 560px){
+	.contact-info {
+		font-size: 14px;
+	}
+}
+
 .contact-info:last-child { margin-right: 0; }
 
 .contact-info-link:focus,
@@ -746,6 +755,23 @@ p:last-child { margin-bottom: 0; }
 	max-width: 1000px;
 }
 
+
+.testimonial .icon {
+  display: inline-block;
+  font-size: 80px;
+  color: #016d9b;
+  margin-bottom: 20px;
+  opacity: 0.6;
+}
+
+.testimonial .description {
+  font-size: 20px;
+  color: #777;
+  text-align: justify;
+  margin-bottom: 7.5px;
+  opacity: 0.9;
+}
+
 @media screen and (max-width: 500px){
 	.testimonial {
 		border-radius: 0px;
@@ -767,22 +793,6 @@ p:last-child { margin-bottom: 0; }
 	  left: auto;
 	  right: 0;
 	}
-}
-
-.testimonial .icon {
-  display: inline-block;
-  font-size: 80px;
-  color: #016d9b;
-  margin-bottom: 20px;
-  opacity: 0.6;
-}
-
-.testimonial .description {
-  font-size: 14px;
-  color: #777;
-  text-align: justify;
-  margin-bottom: 7.5px;
-  opacity: 0.9;
 }
 
 .testimonial .testimonial-content {
@@ -808,7 +818,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 .testimonial .name {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
   color: white;
   text-transform: capitalize;
@@ -817,8 +827,22 @@ p:last-child { margin-bottom: 0; }
 
 .testimonial .title {
   display: block;
-  font-size: 20px;
+  font-size: 25px;
   color: #ffd9b8;
+}
+
+@media screen and (max-width: 500px){
+		.testimonial .description {
+		  font-size: 14px;
+		}
+
+		.testimonial .name {
+			font-size: 25px;
+		}
+
+		.testimonial .title{
+			font-size: 20px;
+		}
 }
 
 /* Old Team - Profile cards */
