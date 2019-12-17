@@ -204,7 +204,6 @@ p:last-child { margin-bottom: 0; }
 /* #tm-section-4	{background: #090C13} */
 #tm-section-4	{background: #333333}
 #tm-section-5 {
-	height: 750px;
 	background: -moz-linear-gradient(90deg, rgba(75,19,97,1) 0%, rgba(0,128,128,1) 100%); /* ff3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,128,128,1)), color-stop(100%, rgba(75,19,97,1))); /* safari4+,chrome */
 	background: -webkit-linear-gradient(90deg, rgba(75,19,97,1) 0%, rgba(0,128,128,1) 100%); /* safari5.1+,chrome10+ */
@@ -222,6 +221,8 @@ p:last-child { margin-bottom: 0; }
 	-webkit-align-items: center;
 	    -ms-flex-align: center;
 	        align-items: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 .tm-section-header {
